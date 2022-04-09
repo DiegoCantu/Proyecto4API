@@ -54,6 +54,14 @@ Response:
     "statusCode": 201
 }
 
+Estructura de la tabla en postgressql:
+CREATE TABLE public."PrediccionesTbl"
+(
+    "Id" integer NOT NULL DEFAULT nextval('"PrediccionesTbl_Id_seq"'::regclass),
+    "Data" json,
+    "Date" date,
+    CONSTRAINT "PrediccionesTbl_pkey" PRIMARY KEY ("Id")
+)
 
 2. Genera el endpoint /prediction_id que recibe como parámetro el id de una inspección en la que estemos interesados
  en obtener su predicción y obtén su predicción de la tabla de predicciones correspondiente a la última fecha de la

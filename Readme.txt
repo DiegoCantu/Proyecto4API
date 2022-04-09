@@ -39,12 +39,10 @@ Body:
 {
     "predicciones": [
         {
-            "data": { <DATA> },
-            "date": "2022-04-07"
+            "data": { <DATA> ,  "date": "2022-04-07"}
         },
         {
-            "data": <DATA>,
-            "date": "2022-04-08"
+            "data": { <DATA> ,  "date": "2022-04-11"}
         }
     ]
 }

@@ -9,7 +9,7 @@ def save_predictions(predictions):
         for prediction in predictions:
             tilde = "'"
             data = str("'") + str(prediction["data"]).replace(f'{tilde}', '"') + str("'")
-            date = str("'") + str(prediction["date"]).replace(f'{tilde}', '"') + str("'")
+            date = str("'") + str(prediction["data"]["date"]).replace(f'{tilde}', '"') + str("'")
             sqlstring = f'INSERT INTO public."PrediccionesTbl"("Data", "Date") VALUES ({data} , {date})'
             sqlquery = text(sqlstring)
             engine.execute(sqlquery)

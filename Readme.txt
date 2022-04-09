@@ -30,7 +30,7 @@ Ejecutar la aplicación desde PyCharm:
 Abrir la url generada en la linea de comandos:
 LOCALHOST = http://127.0.0.1:5000/
 
-1.	Guarda las predicciones que generaste en tu proyecto 3 en una tabla en una base de datos de Postgres.
+1. Guarda las predicciones que generaste en tu proyecto 3 en una tabla en una base de datos de Postgres.
 
 POST:
 LOCALHOST/predictions
